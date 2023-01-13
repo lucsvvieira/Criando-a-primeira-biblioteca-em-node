@@ -1,25 +1,29 @@
 {
-  "name": "2708-node-lib-md",
+  "name": "list-directory-files",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./cli.js",
   "type": "module",
+  "preferGlobal": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cli": "node ./src/cli.js ./arquivos/texto.md",
     "cli:valida": "node ./src/cli.js ./arquivos/texto.md --valida"
   },
+  "bin": {
+    "list-directory-files": "./cli.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alura-cursos/2708-node-lib-md.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["markdown", "URL"],
+  "author": "Lucas Vieira <vieira07lucas@gmail.com> (http://github.com/lucsvvieira)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alura-cursos/2708-node-lib-md/issues"
+    "email": "vieira07lucas@gmail.com"
   },
-  "homepage": "https://github.com/alura-cursos/2708-node-lib-md#readme",
+  "homepage": "https://github.com/lucsvvieira/Criando-a-primeira-biblioteca-em-node",
   "dependencies": {
     "chalk": "5.0.1"
   }
